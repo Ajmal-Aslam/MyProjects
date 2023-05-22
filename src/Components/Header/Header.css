@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.images {
+    width: 147px;
+    height: 115px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 90%;
+
+}
+
+.back {
+    position: absolute;
+    z-index: -1;
+    width: 100%
+}
+
+.left {
+    display: flex;
+    justify-content: initial;
+    gap: 2rem;
+    flex-direction: column;
+    color: white;
+    width: 39%;
+}
+
+
+.thebest {
+    border-radius: 4rem;
+    width: 268px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    left: 8rem;
+    height: 86px;
+    padding: 25px;
+    /* background-color: black;
+    border-radius: 4rem;
+    width: 260px;
+    padding: 24px 13px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    left: 8rem;
+    cursor: pointer;
+    transition: color 0.4s linear; */
+}
+
+
+.inside {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.inbest {
+    /* position: absolute;
+    background-color: orangered;
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem; */
+    position: absolute;
+    background-color: orangered;
+    width: 6.4rem;
+    height: 44px;
+    left: 8px;
+    border-radius: 3rem;
+    bottom: 2px;
+    margin-bottom: 20px;
+    transition: left 0.3s ease;
+}
+
+.buts {
+    width: 241px;
+    height: 35px;
+    background: none;
+    border: none;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+
+}
+
+
+
+.buts:hover {
+    /* background-color: rgb(190, 189, 189); */
+    background-color: transparent;
+    right: 0;
+}
+
+.buts:hover .inside {
+    color: #f2f2f2;
+
+
+}
+
+.buts:hover .inbest {
+    left: 0;
+}
+
+
+ol {
+    display: flex;
+    margin: auto 0;
+}
+
+ol li {
+    list-style: none;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+ol li a {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+ol li:hover a {
+    color: #09f33b;
+}
+
+.forms {
+    position: relative;
+}
+
+.shape {
+    display: flex;
+    margin-top: 2px;
+
+    height: 870px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+    margin-left: 3rem;
+}
+
+.text {
+    font-size: 12.2rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px orangered;
+}
+
+.text1 {
+    display: flex;
+    font-size: 3.2rem;
+    justify-content: center;
+    text-shadow: 0 0 0 transparent,
+        0 0 10px #ff003c,
+        0 0 20px rgba(255, 0, 60, 0.5),
+        0 0 40px #ff003c,
+        0 0 100px #ff003c,
+        0 0 200px #ff003c,
+        0 0 300px #ff003c,
+        0 0 500px #ff003c,
+        0 0 1000px #ff003c;
+    animation: animate 3s infinite alternate;
+
+}
+
+
+
+.sweat {
+    position: absolute;
+    top: 574px;
+    left: 157px;
+    height: 270px;
+}
+
+.buttonss {
+    background-color: transparent;
+    border-radius: 15px;
+    color: white;
+    padding: 12px 45px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: left 0.3s ease;
+
+
+}
+
+.buttonss :hover {
+    color: #09f33b;
+}
+
+@media screen and (max-width: 768px) {
+
+    .images {
+        width: 75%;
+
+    }
+
+    ol li {
+
+        width: max-content;
+    }
+
+    ol li a {
+        font-size: 16px;
+    }
+
+    .thebest {
+        width: 210px;
+        left: 40px;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 25px;
+    }
+
+    .shape {
+        height: 450px;
+        margin-left: 275px;
+
+    }
+
+    .hero {
+
+        gap: 0px;
+
+    }
+
+    .text {
+        font-size: 35px;
+        font-weight: 900;
+
+    }
+
+    .text1 {
+
+        font-size: 25px;
+
+    }
+
+    .buttonss {
+        font-size: 25px;
+        padding: 0px;
+        margin-top: 15px;
+
+    }
+
+}
